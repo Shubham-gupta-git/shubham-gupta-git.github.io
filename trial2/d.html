@@ -1,0 +1,50 @@
+<div class="poster">
+	<img class="mwm-poster" src="asset/mwm-logo.png" alt="">
+	<div class="mwm-after"></div>
+	<div class="mwm-data">
+		<h1>
+			Move with Movies
+		</h1>
+		<p>
+			A prototype of movie explorer
+		</p>
+		<a href="#">Learn more</a>
+	</div>
+</div>
+<style>
+	.poster {
+		position: relative;
+		height: 360px;
+		width: 267px;
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+		transition: all .2s;
+	}
+	.mwm-after{
+		height: 333px;
+		z-index: 100;
+		position: absolute;
+		margin: 10px;
+		width: 247px;
+		transition: opacity .2s;
+		background: radial-gradient(transparent -100px,blue 100%);
+	}
+	.poster:hover .mwm-after{
+		opacity: 0%;
+	}
+	.poster:hover{
+		width: 534px;
+	}
+	.mwm-poster{
+		margin: 10px;
+		width: 247px;
+		flex: 0 0 auto;
+	}
+	.mwm-data{
+		margin: 10px;
+		width: 247px;
+		flex: 0 0 auto;
+		background-color: white;
+	}
+</style>

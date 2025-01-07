@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Dimensions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .dimensions {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="dimensions">
+        <h1>Device Dimensions</h1>
+        <p id="width">Width: </p>
+        <p id="height">Height: </p>
+    </div>
+
+    <script>
+        function updateDimensions() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            document.getElementById('width').textContent = `Width: ${width}px`;
+            document.getElementById('height').textContent = `Height: ${height}px`;
+        }
+
+        window.addEventListener('resize', updateDimensions);
+        window.addEventListener('load', updateDimensions);
+    </script>
+</body>
+</html>
