@@ -6,6 +6,10 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+:root{
+	width: 100%;
+	overflow-x: hidden;
+}
 
 @media (prefers-color-scheme: light) {
 	:root {
