@@ -71,8 +71,6 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 100%;
-	overflow-x: hidden;
 }
 
 body {
@@ -471,6 +469,10 @@ input:valid~button:focus {
 
 @media (max-width:975px) {
 	html {
+		width: 100%;
+		overflow-x: hidden;
+	}
+	body{
 		width: 100%;
 		overflow-x: hidden;
 	}
