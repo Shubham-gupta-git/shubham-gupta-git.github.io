@@ -565,6 +565,7 @@ input:valid~button:focus {
 	.intro-warper,
 	.about-warper,
 	.skills-warper,
+	.project-warper,
 	.contact-warper {
 		/* justify-content: normal; */
 		align-items: normal;
